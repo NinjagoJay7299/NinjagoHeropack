@@ -28,7 +28,6 @@ function init(hero) {
     hero.addKeyBindFunc("Func_POWERSET_NEXT", nextpowersetKey, "Next Powerset", 5)
     hero.addKeyBindFunc("Func_POWERSET_PREV", prevpowersetKey, "Prev Powerset", 5)
 
-
     hero.addKeyBind("ENERGY_PROJECTION", "Ice Beam", 1);
     hero.addKeyBind("BLADE", "Shurikens Of Ice", 2);
     hero.addKeyBind("CHARGE_ICE", "key.chargeIce", 3);
