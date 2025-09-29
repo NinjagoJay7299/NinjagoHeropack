@@ -1,0 +1,11 @@
+{animation4_time}={data}
+{animation4_0}=curve animate2({animation4_time},0.368,0,0.232,0.136)
+{animation4_1}=curve animate2({animation4_time},0.568,0.23199999999999998,0.136,0.432)
+{animation4_2}=curve animate2({animation4_time},12.132,0.368,0.432,11.7)
+
+{nunchuck_rotX}-=-25'{animation4_0}
+{nunchuck_rotZ}-=-100.9803333501'{animation4_0}
+{nunchuck_rotX}-=76.6777771717'{animation4_1}
+{nunchuck_rotY}-=-2.2344340404'{animation4_1}
+{nunchuck_rotZ}-=-125.6606511619'{animation4_1}
+{nunchuck_rotZ}-=-348.2080460348'{animation4_2}

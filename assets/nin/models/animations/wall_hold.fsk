@@ -1,0 +1,18 @@
+{animation4_time}={data}
+{animation4_0}=curve animate2({animation4_time},10,0,0,10)
+
+{Player_posZ}+=-11{animation4_0}
+
+{head_rotX}+=-30'{animation4_0}
+
+{rightArm_rotX}+=-165'{animation4_0}
+{rightArm_posY}+=1.5{animation4_0}
+{rightArm_posZ}+=-1{animation4_0}
+
+{leftArm_rotX}+=-152.5'{animation4_0}
+
+{rightLeg_rotX}+=-20'{animation4_0}
+{rightLeg_posY}+=-1{animation4_0}
+
+{leftLeg_rotX}+=-20'{animation4_0}
+{leftLeg_posY}+=-1{animation4_0}

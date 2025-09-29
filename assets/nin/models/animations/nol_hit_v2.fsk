@@ -1,0 +1,4 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},30,0,0.8333333333,29.1666666667)
+
+{nunchuck2_rotZ}-=150'{animation_0}

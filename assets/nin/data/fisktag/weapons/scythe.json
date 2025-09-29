@@ -1,0 +1,11 @@
+{
+    "name": "Scythe",
+    "permission": "USE_SCYTHE",
+    "holdingPose": "SINGLE",
+    "melee": {
+      "attackDamage": 9.5,
+      "knockback": 0.2
+    }
+  }
+  
+  

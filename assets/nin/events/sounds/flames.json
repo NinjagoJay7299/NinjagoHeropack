@@ -1,0 +1,6 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "nin:suit.flames",
+    "condition": "entity.getInterpolatedData('fiskheroes:aiming_timer') > 0",
+    "volume": 1.0
+}

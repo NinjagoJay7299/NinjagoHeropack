@@ -1,0 +1,2 @@
+//zane skybound spinjitzu doesn't work at all //edited needs to be tested
+//zane skybound renderer needs to be edited to be unique

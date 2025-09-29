@@ -1,0 +1,4 @@
+{spinjitzu_spin_time}={data}
+{spinjitzu_spin_0}=animate2({spinjitzu_spin_time},10,0,1,9)
+
+{bone_rotY}-=1080'{spinjitzu_spin_0}

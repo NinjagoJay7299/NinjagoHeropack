@@ -1,0 +1,23 @@
+{spinjitzu_time}={data}
+{spinjitzu_0}=animate2({spinjitzu_time},10,0,1,9)
+{spinjitzu_1}=animate2({spinjitzu_time},10,0,0.5,9.5)
+
+; {Player_rotY}+=720'{spinjitzu_0}
+
+{rightArm_rotX}+=-22.5'{spinjitzu_1}
+{rightArm_rotZ}+=90'{spinjitzu_1}
+{rightArm_posX}+=-1{spinjitzu_1}
+{rightArm_posY}+=2{spinjitzu_1}
+
+{leftArm_rotX}+=25'{spinjitzu_1}
+{leftArm_rotZ}+=-90'{spinjitzu_1}
+{leftArm_posX}+=1{spinjitzu_1}
+{leftArm_posY}+=2{spinjitzu_1}
+
+{rightLeg_rotY}+=12.5'{spinjitzu_1}
+{rightLeg_rotZ}+=-10'{spinjitzu_1}
+
+{leftLeg_rotY}+=12.5'{spinjitzu_1}
+{leftLeg_rotZ}+=10'{spinjitzu_1}
+
+out "rotate" (0, (720*{spinjitzu_0}), 0, 0) 

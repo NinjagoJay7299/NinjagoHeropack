@@ -1,0 +1,10 @@
+{
+    "name": "Katana",
+    "permission": "USE_KATANA",
+    "holdingPose": "SINGLE",
+    "melee": {
+      "attackDamage": 9.0,
+      "knockback": 0.2
+    }
+  }
+  

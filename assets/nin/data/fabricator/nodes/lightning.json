@@ -1,0 +1,19 @@
+{
+    "display": {
+      "name": {
+        "translate": "Lightning Master"
+      },
+      "description": {
+        "translate": "Lightning Master"
+      },
+      "icon": {
+        "texture": "nin:textures/gui/nodes/bolt.png"
+      },
+      "isLevelable": true
+    },
+    "requirements": [ ],
+    "price": {
+      "TUTRIDIUM": 6,
+      "XP_LEVELS": 10
+    }
+  }

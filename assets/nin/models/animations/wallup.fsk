@@ -1,0 +1,13 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},10,0,0.45,9.55)
+{animation_1}=curve animate2({animation_time},10,0,0.39,9.61)
+{animation_2}=curve animate2({animation_time},10,0,0.42,9.58)
+{animation_3}=curve animate2({animation_time},10,0,0.67,9.33)
+
+{bone11_posY}+=-40{animation_0}
+
+{bone7_posY}+=-53{animation_1}
+
+{bone8_posY}+=-65{animation_2}
+
+{bone12_posY}+=-38{animation_3}

@@ -1,0 +1,7 @@
+{beam_time}={data}
+{beam_0}=curve animate2({beam_time},10,0,1,9)
+
+{nol_rotY}-=-90'{beam_0}
+{nol_posY}+=1{beam_0}
+
+{nunchuck2_rotZ}-=132.5'{beam_0}

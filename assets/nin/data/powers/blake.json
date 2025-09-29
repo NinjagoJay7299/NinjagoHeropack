@@ -1,0 +1,151 @@
+{
+    "name": "Earth Master",
+    "modifiers": {
+      "fiskheroes:super_speed": {
+        "canUseTreadmill": false
+      },
+      "fiskheroes:blade": {},
+      "fiskheroes:flight": {
+        "soundEvents": {
+          "ENABLE": "nin:airjitzu"
+        }
+      },
+      "fiskheroes:controlled_flight": {
+        "speed": 0.1,
+        "boostSpeed": 0.20,
+        "canBoost": true,
+        "collision": {
+          "blocks": {
+            "stopFlying": false,
+            "takeDamage": false
+          },
+          "entities": {
+            "stopFlying": false,
+            "dealDamage": true
+          }
+        },
+        "knockback": 0.4,
+        "soundEvents": {
+          "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+          "BOOST": "fiskheroes:flight_boost"
+        }
+      },
+      "fiskheroes:shield":{},
+      "fiskheroes:energy_projection": {
+        "damageProfile": {
+          "damage": 25.0,
+          "types": {
+            "COSMIC": 1.0
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 80,
+            "ADD_KNOCKBACK": 10
+          }
+        },
+        "range": 10,
+        "radius": 3.0,
+        "soundEvents": {
+          "SHOOT": "",
+          "BEAM_AMBIENT": ""
+        }
+      },
+      "fiskheroes:earthquake": {
+        "damageProfile": {
+          "damage": 1.0,
+          "types": {
+            "EXPLOSION": 1.0
+          }
+        },
+        "radius": 20.0,
+        "knockback": 1.0,
+        "duration": 100,
+        "cooldownTime": 160
+      },
+      "fiskheroes:ground_smash": {
+        "damageProfile": {
+          "damage": 15.0,
+          "types": {
+            "EXPLOSION": 1.0
+          }
+        },
+        "radius": 3.0,
+        "knockback": 3.0,
+        "cooldownTime": 40
+      },
+      "fiskheroes:charged_beam": {
+        "damageProfile": {
+          "damage": 0.0,
+          "types": {
+            "ENERGY": 1.0,
+            "FIRE": 0.5
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 20
+          }
+        },
+        "chargeTime": 20,
+        "duration": 40,
+        "cooldownTime": 40,
+        "range": 32.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "SHOOT": "",
+          "BEAM_AMBIENT": ""
+        }
+      },
+      "fiskheroes:slow_motion": {
+        "soundEvents": {
+          "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+            "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+        }
+      },
+      "fiskheroes:leaping": {
+        "leapAmount": [0.5, 0.4]
+      },
+      "fiskheroes:transformation": {
+        "key": "STEEL_TRANSFORM",
+        "isToggle": true,
+        "transformation": {
+          "toggleData": "fiskheroes:dyn/steeled",
+          "timerData": "fiskheroes:dyn/steel_timer",
+          "time": 8
+        }
+      },
+      "fiskheroes:intangibility": {
+      "isAbsolute": false,
+      "soundEvents":{
+        "ENABLE": ":"
+      }
+    },
+      "fiskheroes:charged_punch": {
+      "chargeTime": 2
+    },
+      "fiskheroes:cooldown": {
+        "cooldown": {
+          "toggleData": "fiskheroes:dyn/steeled",
+          "cooldownData": "fiskheroes:dyn/steel_cooldown",
+          "duration": 20,
+          "recovery": 1.0
+        }
+      },
+    "fiskheroes:metal_skin": {}
+    },
+  
+    "hud": [{
+        "type": "CIRCLE",
+        "color": "0x0000FF",
+        "data": "fiskheroes:beam_charge"
+      }, {
+        "type": "CIRCLE",
+        "color": "0x0000FF",
+        "data": "fiskheroes:lightsout_timer"
+      },
+      {
+        "type": "PROGRESS",
+        "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+        "data": "fiskheroes:dyn/steel_cooldown"
+      }
+    ]
+  }

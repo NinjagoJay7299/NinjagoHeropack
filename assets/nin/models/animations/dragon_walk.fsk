@@ -1,0 +1,64 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},0.5,0,0.25,0.25)
+{animation_1}=curve animate2({animation_time},0.5,0.25,0.25,0.25)
+{animation_2}=curve animate2({animation_time},0.5,0.5,0.25,0.25)
+{animation_3}=curve animate2({animation_time},0.25,0,0,0.25)
+{animation_4}=curve animate2({animation_time},9.25,0.75,0.25,9)
+{animation_5}=curve animate2({animation_time},0.37,0,0.12,0.25)
+{animation_6}=curve animate2({animation_time},0.51,0.12,0.25,0.26)
+{animation_7}=curve animate2({animation_time},0.5,0.37,0.26,0.24)
+{animation_8}=curve animate2({animation_time},0.37,0.63,0.24,0.13)
+{animation_9}=curve animate2({animation_time},0.84,0,0.42,0.42)
+{animation_10}=curve animate2({animation_time},0.58,0.42,0.42,0.16)
+
+; {dragon_head_rotX}-=10'{animation_0}
+; {dragon_head_rotX}-=-10'{animation_1}
+; {dragon_head_rotX}-=10'{animation_2}
+
+{frontleft_rotX}-=22.5'{animation_3}
+{frontleft_rotX}-=-20'{animation_0}
+{frontleft_rotX}-=22.5'{animation_1}
+{frontleft_rotX}-=-22.5'{animation_2}
+{frontleft_rotX}-=22.5'{animation_4}
+
+{frontright_rotX}-=-22.5'{animation_3}
+{frontright_rotX}-=22.5'{animation_0}
+{frontright_rotX}-=-22.5'{animation_1}
+{frontright_rotX}-=22.5'{animation_2}
+{frontright_rotX}-=-22.5'{animation_4}
+
+{rightwing_rotZ}-=-15'{animation_0}
+{rightwing_rotZ}-=15'{animation_1}
+{rightwing_rotZ}-=-15'{animation_2}
+
+{leftwing_rotZ}-=15'{animation_0}
+{leftwing_rotZ}-=-15'{animation_1}
+{leftwing_rotZ}-=15'{animation_2}
+
+{backleft_rotX}-=-22.5'{animation_5}
+{backleft_rotX}-=22.5'{animation_6}
+{backleft_rotX}-=-22.5'{animation_7}
+{backleft_rotX}-=22.5'{animation_8}
+
+{backright_rotX}-=22.5'{animation_5}
+{backright_rotX}-=-22.5'{animation_6}
+{backright_rotX}-=22.5'{animation_7}
+{backright_rotX}-=-22.5'{animation_8}
+
+{tail_rotX}-=17.5'{animation_9}
+{tail_rotY}-=-12.5'{animation_9}
+{tail_rotX}-=-25'{animation_10}
+{tail_rotY}-=7.5'{animation_10}
+
+{bone37_rotX}-=-22.5'{animation_9}
+{bone37_rotY}-=17.5'{animation_9}
+{bone37_rotY}-=-22.5'{animation_10}
+
+{bone38_rotX}-=-25'{animation_9}
+{bone38_rotY}-=-12.5'{animation_9}
+{bone38_rotX}-=22.5'{animation_10}
+{bone38_rotY}-=27.5'{animation_10}
+
+{bone6_rotX}-=-12.5'{animation_9}
+{bone6_rotY}-=10'{animation_9}
+{bone6_rotY}-=-30'{animation_10}

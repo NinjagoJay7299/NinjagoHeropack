@@ -1,0 +1,17 @@
+{
+    "particles": [
+      {
+        "type": "ENERGY_SMOKE",
+        "anchor": "rightArm",
+        "amount": 10,
+        "offset": {
+          "tp": [0.5, 9.5, 0.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 1.0],
+        "mirror": "!firstPerson",
+        "lockFPRot": true,
+        "lockFPYaw": true
+      }
+    ]
+  }

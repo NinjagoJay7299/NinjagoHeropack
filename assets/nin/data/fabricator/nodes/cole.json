@@ -1,0 +1,9 @@
+{
+    "suit": "nin:cole",
+    "requirements": [
+      "fiskheroes:tier6_7",
+      "fiskheroes:flight",
+      "nin:ninja",
+      "nin:earth"
+    ]
+  }

@@ -1,0 +1,6 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "nin:suit.flute",
+    "condition": "fiskheroes:blade",
+    "volume": 1.0
+}

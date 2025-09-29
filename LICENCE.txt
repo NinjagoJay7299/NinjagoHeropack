@@ -1,0 +1,46 @@
+LICENSE AGREEMENT FOR NINJAGO HEROPACK
+
+This license agreement (the "Agreement") is a legal agreement between you (the "Licensee"), and NinjagoJay7299 (the "Licensor"), The Licensor.
+The Licensor is the owner of Ninjago Heropack, a Heropack that adds more suits to the Minecraft mod "Fisk's Superheroes Mod". By downloading, installing, or using Ninjago Heropack, you agree to be bound by the terms and conditions of this Agreement.
+
+PERMISSION FOR MODPACK CREATORS
+Modpack creators are granted a non-transferable, non-sublicensable, and non-exclusive license to use Ninjago Heropack in their modpacks, provided that they:
+a. Obtain prior written permission from the Licensor.
+b. Give credit and provide a link back to the Curseforge page of Ninjago Heropack at https://www.curseforge.com/minecraft/customization/ninjago-jays-ninjago-heropack-fiskheroes in the modpack and in a prominent position, such as modpack page, Discord announcement, etc.
+c. Do not modify any part of Ninjago Heropack without permission.
+
+PERMISSION FOR CONTENT CREATORS
+Content creators are granted a non-transferable, non-sublicensable, and non-exclusive license to use Ninjago Heropack in their modpacks, provided that they:
+a. Obtain prior written permission from the Licensor.
+b. Give credit and provide a link back to the Curseforge page of Ninjago Heropack at https://www.curseforge.com/minecraft/customization/ninjago-jays-ninjago-heropack-fiskheroes in the modpack and in a prominent position, such as modpack page, Discord announcement, etc.
+c. Do not modify any part of Ninjago Heropack without permission.
+d. Contact the pack owner before posting
+
+PERMISSION FOR SERVERS
+Servers are granted a non-transferable, non-sublicensable, and non-exclusive license to use Ninjago Heropack in their servers, provided that they:
+a. Obtain prior written permission from the Licensor.
+b. Give credit and provide a link back to the Curseforge page of Ninjago Heropack at https://www.curseforge.com/minecraft/customization/ninjago-jays-ninjago-heropack-fiskheroes in the modpack and in a prominent position, such as modpack page, Discord announcement, etc.
+c. Do not modify any part of Ninjago Heropack without permission.
+
+PERMISSION FOR ALL OTHER INDIVIDUALS
+All other individuals are granted a non-transferable, non-sublicensable, and non-exclusive license to use Ninjago Heropack for private and personal use. All other individuals are not permitted to:
+a. Re-upload, steal, or copy any aspect of Ninjago Heropack.
+b. Share any modified version of Ninjago Heropack.
+
+PROHIBITION OF SALE
+No party, including but not limited to modpack creators, server owners, and all other individuals, may sell, offer for sale, or commercialize Ninjago Heropack or any part thereof. Any attempt to sell or commercialize Ninjago Heropack will be considered a violation of this Agreement and may result in legal action.
+
+VIOLATIONS OF LICENSE AGREEMENT
+Any violation of the terms or rules of this Agreement may result in legal action. The Licensor reserves the right to pursue any and all legal remedies against any violator of this Agreement.
+
+LIMITATION OF LIABILITY
+The Licensor is not responsible for any potential damage caused by Ninjago Heropack.
+
+GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which the user resides, without giving effect to any principles of conflicts of law.
+
+VERSION OF AGREEMENT
+This license agreement is only applicable to the current version of Ninjago Heropack as each version of Ninjago Heropack has its own distinct license agreement. The Licensor reserves the right to change the terms and conditions of this Agreement for any subsequent version of Ninjago Heropack.
+
+CONTACTING LICENSOR
+To contact the Licensor regarding any inquiries or to seek permission for using Ninjago Heropack, you may reach out to them through Discord with the username 'Jay7299'.

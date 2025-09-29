@@ -1,0 +1,8 @@
+{data} = curve {data}
+
+{rightArm_rotX} = {leftArm_rotX}
+{rightArm_rotY} = {leftArm_rotY}
+{rightArm_rotZ} = {leftArm_rotZ} 
+
+out "firstPerson" (true)
+out "translate" (0{data}, -0.5{data}, 0{data})

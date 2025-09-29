@@ -1,0 +1,12 @@
+{data} = curve {data}
+
+{rightArm_rotX} @ {data} -'> -90'
+{rightArm_rotY} @ {data} -'> -10'
+{rightArm_rotZ} @ {data} -'> 20'
+
+{leftArm_rotX} @ {data} -'> -50'
+{leftArm_rotY} @ {data} -'> 15'
+{leftArm_rotZ} @ {data} -'> 20'
+
+out "firstPerson" (true)
+out "translate" (0{data}, -0.5{data}, 0{data})

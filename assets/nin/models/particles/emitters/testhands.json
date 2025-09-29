@@ -1,0 +1,201 @@
+{
+    "particles": [
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [1.0, 9.0, 14.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [3.0, 8.0, 13.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [0.0, 8.0, 10.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [-2.0, 8.0, 9.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [-4.0, 8.0, 7.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [-7.0, 8.0, 4.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [-12.0, 8.0, 2.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [-18.0, 8.0, 0.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [-25.0, 8.0, -2.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 8,
+        "offset": {
+          "tp": [-9.0, 8.0, -4.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 16,
+        "offset": {
+          "tp": [-4.0, 8.0, -6.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 16,
+        "offset": {
+          "tp": [-4.0, 8.0, -10.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 16,
+        "offset": {
+          "tp": [-4.0, 8.0, -13.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      },
+      {
+        "type": "CRYO_SMOKE",
+        "anchor": "rightArm",
+        "amount": 16,
+        "offset": {
+          "tp": [-4.0, 8.0, -16.0],
+          "fp": [8.0, 8.0, 0.0]
+        },
+        "motion": [0.0, 0.0, 0.0],
+        "randOffset": [0.1, 0.1, 0.1],
+        "randMotion": [0.01, 0.0, 0.01],
+        "mirror": "!firstPerson",
+        "lockFPYaw": true
+      }
+    ]
+  }
+  

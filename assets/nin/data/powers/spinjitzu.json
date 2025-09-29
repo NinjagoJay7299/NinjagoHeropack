@@ -1,0 +1,25 @@
+{
+    "name": "Spinjitzu",
+    "modifiers": {
+      "fiskheroes:energy_projection": {
+        "damageProfile": {
+          "damage": 10.0,
+          "types": {
+            "COSMIC": 1.0
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 80,
+            "ADD_KNOCKBACK": 80
+          }
+        },
+        "range": 2,
+        "radius": 4.0,
+        "soundEvents": {
+          "SHOOT": "nin:spinjitzu_start",
+          "BEAM_AMBIENT": "nin:spinjitzu_loop"
+        }
+      }
+  }
+}
+  

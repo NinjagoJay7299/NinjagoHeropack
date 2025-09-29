@@ -1,0 +1,19 @@
+{
+    "fade": 10,
+    "lightning": {
+      "color": "0xFFE942",
+      "density": 40,
+      "differ": 2.00,
+      "opacity": 1
+    },
+    "flicker": {
+      "color": "0xFFE942",
+      "density": 30,
+      "frequency": 1.6,
+      "length": 1.0,
+      "spread": 0.65,
+      "opacity": 1.0,
+      "confined": true
+    }
+  }
+  

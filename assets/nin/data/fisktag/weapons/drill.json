@@ -1,0 +1,10 @@
+{
+  "name": "Earth Breaker",
+  "permission": "USE_EARTH_BREAKER",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 11.0,
+    "knockback": 0.2
+  }
+}
+

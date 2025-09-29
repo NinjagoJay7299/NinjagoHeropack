@@ -1,0 +1,289 @@
+extend("fiskheroes:hero_basic");
+loadTextures({
+    "layer1": "nin:custom/ninjagojay7299",
+    "layer2": "nin:custom/ninjagojay7299",
+    "godmode": "nin:custom/godmode",
+    "mask": "nin:custom/speedster_mask",
+    "nunchuck": "nin:custom/nunchuck",
+    "null": "nin:null",
+    "spinjitzu": "nin:custom/spinjitzujay",
+    "nunhand": "nin:custom/nunhand",
+    "airjitzu":"nin:custom/airjitzujay",
+});
+var airjitzu;
+var nunhand;
+var spinjitzu;
+var nunchuck;
+var overlay;
+var utils = implement("fiskheroes:external/utils");
+var _helmet = implement("fiskheroes:external/iron_man_helmet");
+var helmet;
+var vibration;
+var speedster = implement("fiskheroes:external/speedster_utils");
+
+function invis(entity) {
+    return  (entity.isSprinting()) && (entity.getData("fiskheroes:energy_projection"));
+}
+function fly(entity) {
+    return !entity.isOnGround() && (entity.getData("nin:dyn/airjitzu_timer") == 1);
+}
+function nunchuckenabled(entity) {
+    return entity.getData("fiskheroes:blade") && !entity.getPunchTimerInterpolated();
+}
+function init(renderer) {
+    parent.init(renderer);
+    renderer.setItemIcons("custom/ninjagojay7299_0", "custom/ninjagojay7299_1", "custom/ninjagojay7299_2", "custom/ninjagojay7299_3");
+    addAnimation(renderer, "speedster.SPRINT", "fiskheroes:speedster_sprint").setData((entity, data) => !entity.getData("fiskheroes:energy_projection") && data.load(Math.max(entity.getInterpolatedData("fiskheroes:speed_sprinting") * 5 - 4, 0)));
+    renderer.setTexture((entity, renderLayer) => {
+        if (entity.getData("fiskheroes:energy_projection")) {
+            return "null";
+        }
+        if (fly(entity)) {
+            return "null";
+        }
+        if (entity.getData("nin:dyn/god_timer") == 1) {
+            return "godmode";
+        }
+        /*if (nunchuckenabled(entity) && entity.isSprinting()) {
+            return "null";
+        }*/
+        return "layer1";
+    });
+    //renderer.setLights((entity, renderLayer) => renderLayer == "CHESTPLATE" ? "lights" : null);
+
+    renderer.showModel("CHESTPLATE", "head", "headwear", "body", "rightArm", "leftArm", "rightLeg", "leftLeg");
+    renderer.fixHatLayer("HELMET", "CHESTPLATE");
+}
+
+function initEffects(renderer) {
+
+    //utils.bindTrail(renderer, "nin:lightning_ninjagojay7299");
+
+    bolt = renderer.createEffect("fiskheroes:model");
+    bolt.setModel(utils.createModel(renderer, "nin:bolt", null, "nunchuck"));
+    bolt.setOffset(-4, -9, -6);
+    bolt.setRotation(90.0, 0.0, 0.0)
+    bolt.anchor.set("rightArm");
+    bolt.mirror = false;
+    bolt.opacity = 0.9;
+
+    nunhand = renderer.createEffect("fiskheroes:model");
+    nunhand.setModel(utils.createModel(renderer, "nin:nunhand", null, "nunhand"));
+    nunhand.setOffset(-18, 10, -8);
+    nunhand.setRotation(90.0, 0.0, 0.0)
+    nunhand.anchor.set("rightArm");
+    nunhand.mirror = false;
+    nunhand.opacity = 0.9;
+
+    nunright = renderer.createEffect("fiskheroes:model");
+    nunright.setModel(utils.createModel(renderer, "nin:nunright", null, "nunchuck"));
+    nunright.setOffset(8, -8, -7);
+    nunright.setRotation(90.0, 0.0, 0.0)
+    nunright.anchor.set("rightArm");
+    nunright.mirror = false;
+    nunright.opacity = 0.9;
+
+    nunleft = renderer.createEffect("fiskheroes:model");
+    nunleft.setModel(utils.createModel(renderer, "nin:nunright", null, "nunchuck"));
+    nunleft.setOffset(6, -8, -7);
+    nunleft.setRotation(90.0, 0.0, 0.0)
+    nunleft.anchor.set("leftArm");
+    nunleft.mirror = false;
+    nunleft.opacity = 0.9;
+
+    nunhand2 = renderer.createEffect("fiskheroes:model");
+    nunhand2.setModel(utils.createModel(renderer, "nin:nunhand", null, "nunhand"));
+    nunhand2.setOffset(-18, 15, 0);
+    nunhand2.setRotation(180.0, 0.0, 0.0)
+    nunhand2.anchor.set("rightArm");
+    nunhand2.mirror = false;
+    nunhand2.opacity = 0.9;
+
+    spinjitzu = renderer.createEffect("fiskheroes:model");
+    spinjitzu.setModel(utils.createModel(renderer, "nin:spinjitzu", null, "spinjitzu"));
+    spinjitzu.setOffset(1, -44, 1);
+    spinjitzu.anchor.set("body");
+    spinjitzu.mirror = false;
+    spinjitzu.setScale(3.0)
+    //spinjitzu.opacity = 0.9999;
+
+    airjitzu = renderer.createEffect("fiskheroes:model");
+    airjitzu.setModel(utils.createModel(renderer, "nin:airjitzu-old", null, "airjitzu"));
+    airjitzu.setOffset(0, 2, 0);
+    airjitzu.anchor.set("body");
+    airjitzu.mirror = false;
+    airjitzu.setScale(0.75)
+    airjitzu.opacity = 0.1;
+
+    overlay = renderer.createEffect("fiskheroes:overlay");
+
+    godlay = renderer.createEffect("fiskheroes:overlay");
+    godlay.texture.set(null, "godmode");
+    godlay.opacity = 1;
+
+    utils.bindBeam(renderer, "fiskheroes:energy_projection", "nin:invisible", "body", 0x000000, [{
+                "firstPerson": [0, 0, 0],
+                "offset": [0, 0, 0],
+                "size": [1, 1]
+            }
+        ]);//0x00EAFF
+
+    utils.bindBeam(renderer, "fiskheroes:lightning_cast", "fiskheroes:energy_discharge", "rightArm", 0x00EAFF, [{
+                "firstPerson": [-8.0, 4.5, -10.0],
+                "offset": [-0.5, 9.0, 0.0],
+                "size": [0.75, 0.75]
+            }
+        ]);
+
+    utils.bindBeam(renderer, "fiskheroes:energy_manipulation", "fiskheroes:energy_discharge", "rightArm", 0x00EAFF, [{
+                "firstPerson": [-2.5, 0.0, -7.0],
+                "offset": [-0.5, 19.0, -12.0],
+                "size": [1.5, 1.5]
+            }
+
+        ]);
+        utils.bindBeam(renderer, "fiskheroes:charged_beam", "nin:jay", "rightArm", 0x00EAFF, [
+            { "firstPerson":  [-4.5, 3.75, -8.0], "offset": [-0.5, 9.0, 0.0], "size": [1.0, 1.0]  }
+            //for left arm
+            //{ "firstPerson": [-2.5, 0.0, -7.0], "offset": [-0.5, 19.0, -12.0], "size": [2.0, 2.0], "anchor": "leftArm" }
+        ]).setCondition(entity => entity.getData("nin:dyn/powerset") == 1);
+
+        utils.bindBeam(renderer, "fiskheroes:charged_beam", "nin:invisible", "rightArm", 0x00EAFF, [
+            { "firstPerson":  [-4.5, 3.75, -8.0], "offset": [-0.5, 9.0, 0.0], "size": [1.0, 1.0]  }
+            //for left arm
+            //{ "firstPerson": [-2.5, 0.0, -7.0], "offset": [-0.5, 19.0, -12.0], "size": [2.0, 2.0], "anchor": "leftArm" }
+        ]).setCondition(entity => entity.getData("nin:dyn/powerset") == 3);
+        /*var beam_1 = renderer.createResource("BEAM_RENDERER", "nin:7299");
+
+        beam1 = utils.createLines(renderer, beam_1, 0x00EAFF, [
+            {
+                "start": [0, -64, 0],
+                "end": [0, -1, 0],
+                "size": [6.0, 6.0]
+            },
+        ])
+
+        beam1.anchor.set("body");
+        beam1.setOffset(1.0, 8, 38.0, -3.2).setRotation(0, 90.0, 0).setScale(6.0);*/
+
+        var lightningsurge_color = 0x00EAFF;
+        var lightningsurge_beam = renderer.createResource("BEAM_RENDERER", "nin:punch");
+    
+        lightningsurgearms = utils.createLines(renderer, lightningsurge_beam, lightningsurge_color, [
+            {"start": [1.3, -1.0, -1.1], "end": [-1.7, 6.5, -1.1], "size": [10.0, 10.0]},
+            {"start": [-1.7, -1.0, -1.1], "end": [-0.3, 6.5, -1.1], "size": [10.0, 10.0]},
+              
+            {"start": [1.3, -1.0, 1.1], "end": [-1.7, 6.5, 1.1], "size": [10.0, 10.0]},
+            {"start": [-1.7, -1.0, 1.1], "end": [-0.3, 6.5, 1.1], "size": [10.0, 10.0]},
+              
+            {"start": [-1.8, -1.0, 1.0], "end": [-1.8, 6.5, -1.0], "size": [10.0, 10.0]},
+            {"start": [-1.8, -1.0, -1.0], "end": [-1.8, 6.5, 1.0], "size": [10.0, 10.0]},
+              
+            {"start": [0.4, -1.0, 1.0], "end": [0.4, 6.5, -1.0], "size": [10.0, 10.0]},
+            {"start": [0.4, -1.0, -1.0], "end": [0.4, 6.5, 1.0], "size": [10.0, 10.0]}
+        ]);
+        lightningsurgearms.anchor.set("rightArm");
+        lightningsurgearms.setScale(1.5);
+        lightningsurgearms.mirror = false;
+
+        helmet = _helmet.createFaceplate(renderer, "mask", null);
+
+    var sprint = renderer.bindProperty("fiskheroes:trail");  
+    sprint.setTrail(renderer.createResource("TRAIL", "nin:ninjagojay7299"));
+    sprint.setCondition(entity => (entity.getData("fiskheroes:energy_projection")));
+
+    var trail1 = renderer.bindProperty("fiskheroes:trail");  
+    trail1.setTrail(renderer.createResource("TRAIL", "nin:lightning_ninjagojay7299"));
+    trail1.setCondition(entity => (!fly(entity)));
+
+    var burst = renderer.bindProperty("fiskheroes:trail");
+    burst.setTrail(renderer.createResource("TRAIL", "nin:burst"));
+    burst.setCondition(entity => entity.getData("nin:dyn/lightning_pulse_timer") == 1);
+
+    utils.bindParticles(renderer, "nin:blue_hands").setCondition(entity => (entity.getInterpolatedData("fiskheroes:blade_timer") > 0 && entity.getInterpolatedData("fiskheroes:blade_timer") < 1));
+    renderer.bindProperty("fiskheroes:opacity").setOpacity((entity, renderLayer) => {
+        return entity.getInterpolatedData("fiskheroes:intangibility_timer") ? 0.5 : 1.0 || fly(entity) ? 0.9 : 1 || entity.getData("fiskheroes:energy_projection") ? 0.9 : 1;
+    });
+}
+
+function initAnimations(renderer) {
+    parent.initAnimations(renderer);
+    renderer.removeCustomAnimation("basic.FLIGHT");
+    renderer.removeCustomAnimation("basic.HOVER");
+    renderer.removeCustomAnimation("basic.AIMING");
+    renderer.removeCustomAnimation("basic.CHARGED_BEAM");
+    utils.addFlightAnimation(renderer, "jay.FLIGHT", "fiskheroes:flight/default.anim.json");
+    utils.addHoverAnimation(renderer, "jay.HOVER", "fiskheroes:flight/idle/neutral");
+    addAnimationWithData(renderer, "basic.AIMING", "fiskheroes:dual_aiming", "fiskheroes:aiming_timer");
+    addAnimationWithData(renderer, "jay.CHARGEDBEAM", "fiskheroes:aiming", "fiskheroes:beam_charging").setCondition(entity => (entity.getData("fiskheroes:beam_charging")));
+    //addAnimation(renderer, "jay.NUNCHUCKS", "nin:nunchucks").setCondition(entity => (entity.getData("fiskheroes:shield") && !entity.getInterpolatedData("fiskheroes:beam_charge") && !entity.getData("fiskheroes:moving") && !entity.getPunchTimerInterpolated()));;
+    /*addAnimationWithData(renderer, "jay.SPIN", "nin:spin").setData((entity, data) => {
+        data.load(entity.getData('fiskheroes:energy_projection_timer'));
+    });
+    addAnimationWithData(renderer, "jay.SPINFULL", "nin:spinjitzu").setData((entity, data) => {
+        data.load(entity.getData('fiskheroes:energy_projection_timer') && entity.loop(5) * 10);
+    });*/
+ }
+function render(entity, renderLayer, isFirstPersonArm) {
+    if (entity.isWearingFullSuit() && !entity.getData("fiskheroes:energy_projection") && !fly(entity)) {
+        overlay.render();
+    }
+    if (entity.getData("nin:dyn/lightning_pulse_timer") == 1) {
+        
+    }
+    if (entity.getData("nin:dyn/god_timer") == 1 && !entity.getData("fiskheroes:energy_projection")) {
+        godlay.render();
+    }
+    /*if (entity.getData("nin:dyn/god_timer") < 1 && entity.getData("nin:dyn/god_timer") > 0) {
+        beam1.render();
+    }*/
+    if (entity.getPunchTimerInterpolated() && entity.getData("fiskheroes:blade")) {
+        nunhand.render();
+    }
+    if (entity.getData("fiskheroes:blade") && !entity.getInterpolatedData("fiskheroes:beam_charge") && !entity.getData("fiskheroes:moving") && !entity.getPunchTimerInterpolated()) {
+        bolt.render();
+    }
+    if (entity.getInterpolatedData("fiskheroes:beam_charge") && entity.getData("fiskheroes:blade")) {
+        nunhand2.render()
+    }
+    if (entity.getData("fiskheroes:energy_projection")) {
+        spinjitzu.setRotation(0, entity.loop(2) * 100, 0)
+        spinjitzu.render();
+    }
+    if (fly(entity)) {
+        airjitzu.setRotation(0, entity.loop(2) * 1000, 0)
+        airjitzu.render();
+    }
+    if (renderLayer == "CHESTPLATE") {
+        var punch_timer = entity.getInterpolatedData('fiskheroes:energy_charge');
+    
+        lightningsurgearms.progress = punch_timer;
+        lightningsurgearms.render();
+    }
+    /*if (entity.isSprinting() && nunchuckenabled(entity) && !entity.getData("fiskheroes:dyn/steel_timer") == 1 && !entity.getData("fiskheroes:energy_projection") && !entity.getData("fiskheroes:beam_charge")) {
+        head.render();
+        body.render();
+        rightleg.render();
+        leftleg.render();
+        rightarm.render();
+    }
+    if (entity.isSprinting() && nunchuckenabled(entity) && !entity.getData("fiskheroes:dyn/steel_timer") == 1 && !entity.getData("fiskheroes:energy_projection") && !entity.getData("fiskheroes:beam_charge")) {
+        leftarm.render();
+    }
+    if (entity.isSprinting() && nunchuckenabled(entity) && !entity.getData("fiskheroes:dyn/steel_timer") == 1 && !entity.getData("fiskheroes:energy_projection") && entity.getData("fiskheroes:beam_charge")) {
+        leftarmleft.render();
+    }*/
+    if (nunchuckenabled(entity) && !entity.getInterpolatedData("fiskheroes:beam_charge") && !entity.getPunchTimerInterpolated()) {
+        nunright.render();
+        nunleft.render();
+    }
+    if (!isFirstPersonArm && !entity.getData("fiskheroes:energy_projection") && !fly(entity)) {
+        if (renderLayer == "HELMET") {
+            helmet.render(entity.getInterpolatedData("fiskheroes:mask_open_timer2"));
+        }
+    }
+
+    /*if (entity.isSprinting()) {
+        nunchuck_back.render();
+    }*/
+    }

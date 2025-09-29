@@ -1,0 +1,276 @@
+{
+  "name": "Ice Master",
+  "modifiers": {
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": false
+    },
+    "fiskheroes:shield":{},
+    "fiskheroes:charged_beam|spin": {
+      "damageProfile": {
+        "damage": 0.0,
+        "types": {
+          "COLD": 5.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0,
+          "ADD_KNOCKBACK": 0
+        }
+      },
+      "chargeTime": 5,
+      "duration": 20000000000,
+      "cooldownTime": 1,
+      "range": 2.0,
+      "radius": 4.0,
+      "soundEvents": {
+        "SHOOT": "nin:spinjitzu_start",
+        "BEAM_AMBIENT": "nin:spinjitzu_zane"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.20,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": "fiskheroes:flight_boost"
+      }
+    },
+    "fiskheroes:energy_bolt": {
+        "damageProfile": {
+          "damage": 15.5,
+          "types": {
+            "COLD": 1.0
+          }
+        },
+        "isExplosive": false,
+        "cooldownTime": 3,
+        "soundEvents": {
+          "SHOOT": ":"
+        }
+      },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+          "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.5, 0.4]
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "nin:ice_blade"
+      }
+    },
+    "fiskheroes:flight": {
+      "soundEvents": {
+        "ENABLE": "nin:airjitzu"
+      }
+    },
+    "fiskheroes:charged_beam|toss": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "COLD": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "canDoGriefing": false,
+      "range": 30,
+      "radius": 0.5,
+      "chargeTime": 0.5,
+      "duration": 15,
+      "cooldownTime": 0.5,
+      "soundEvents": {
+        "SHOOT": "nin:ice_beam",
+        "BEAM_AMBIENT": "nin:ice_beam"
+      }
+    },
+    "fiskheroes:transformation|spin_start": {
+      "key": "SPINJITZU",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "nin:dyn/spinning",
+        "timerData": "nin:dyn/spin_start_timer",
+        "time": 100000
+      },
+      "soundEvents": {
+        "ENABLE": "nin:airjitzu"
+      }
+    },
+    "fiskheroes:transformation|spinning": {
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "nin:dyn/spinning_1",
+        "timerData": "nin:dyn/spin_timer",
+        "time": 8
+      },
+      "soundEvents": {
+        "ENABLE": "nin:airjitzu"
+      }
+    },
+    "fiskheroes:transformation|throw_start": {
+      "key": "TOSS",
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "nin:dyn/throw_started",
+        "timerData": "nin:dyn/throw_start_timer",
+        "time": 100000
+      },
+      "soundEvents": {
+        "ENABLE": ":"
+      }
+    },
+    "fiskheroes:transformation|throwing": {
+      "isToggle": false,
+      "transformation": {
+        "toggleData": "nin:dyn/throwing",
+        "timerData": "nin:dyn/throw_timer",
+        "time": 8
+      },
+      "soundEvents": {
+        "ENABLE": ":"
+      }
+    },
+    "fiskheroes:transformation|fall": {
+      "key": "TENTACLES",
+      "transformation": {
+        "toggleData": "nin:dyn/fall_immunity_active",
+        "timerData": "nin:dyn/fall_damage_immunity",
+        "time": 8
+      },
+      "soundEvents": {
+        "ENABLE": "nin:airjitzu"
+      }
+    },
+    "fiskheroes:cooldown|fall": {
+      "cooldown": {
+        "toggleData": "nin:dyn/fall_immunity_active",
+        "cooldownData": "nin:dyn/fall_damage_immunity_cooldown",
+        "duration": 50,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:tentacles": {
+      "tentacles": [
+        [0.7, 0, 0.4],
+        [-0.7, 0, 0.4]
+      ],
+      "climbing": {
+        "speed": 0.25,
+        "range": 1,
+        "tolerance": 2,
+        "minAnchorPoints": 1,
+        "anchorPointZones": [
+          ["FRONT", "FRONT", "FRONT"],
+          ["FRONT", "FRONT", "FRONT"]
+        ]
+      }
+    },
+    "fiskheroes:energy_projection": {
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "COSMIC": 1.0,
+          "COLD": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "HEAT_TRANSFER": 0
+        }
+      },
+      "range": 20,
+      "radius": 0.5,
+      "soundEvents": {
+        "SHOOT": "nin:ice_proj",
+        "BEAM_AMBIENT": "nin:ice_proj"
+      }
+    },
+    "fiskheroes:cryo_charge": {
+      "isToggle": false,
+  "soundEvents": {
+      "CHARGE": "fiskheroes:cryo_charge"
+    }
+  },
+  "fiskheroes:cryoball": {},
+    "fiskheroes:damage_bonus": {
+      "amount": 3.0,
+      "damageBonus": {
+        "data": "fiskheroes:cryo_charge",
+        "uses": 30
+      }
+    },
+    "fiskheroes:icicles": {
+      "damageProfile": {
+        "damage": 4.0,
+        "types": {
+          "SHARP": 1.0,
+          "COLD": 0.5
+        },
+        "properties": {
+          "REDUCE_KNOCKBACK": 0.2
+        }
+      },
+      "quantity": 5,
+      "spread": 0.5,
+      "cooldownTime": 3
+    },
+    "fiskheroes:transformation": {
+      "key": "STEEL_TRANSFORM",
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/steeled",
+        "timerData": "fiskheroes:dyn/steel_timer",
+        "time": 8
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:dyn/steeled",
+        "cooldownData": "fiskheroes:dyn/steel_cooldown",
+        "duration": 200,
+        "recovery": 1.0
+      }
+    },
+  "fiskheroes:metal_skin": {}
+  },
+
+  "hud": [
+      {
+      "type": "CIRCLE",
+      "color": "0x4CB5FF",
+      "data": "fiskheroes:lightsout_timer"
+      },
+      {
+        "type": "CIRCLE",
+        "color": "0x4CB5FF",
+        "data": "fiskheroes:beam_charge"
+      },
+      {
+      "type": "CHARGE",
+      "texture": "fiskheroes:textures/gui/bars/cryo_charge.png",
+      "data": "fiskheroes:cryo_charge"
+      },
+      {
+        "type": "PROGRESS",
+        "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+        "data": "fiskheroes:dyn/steel_cooldown"
+      }
+    
+  ]
+}
+

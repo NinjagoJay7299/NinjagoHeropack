@@ -1,0 +1,6 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "nin:suit.spinjitzu_start",
+    "volume" : 1.0,
+    "loop": false
+}

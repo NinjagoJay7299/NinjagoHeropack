@@ -1,0 +1,31 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},10,0,0,10)
+{animation_1}=curve animate2({animation_time},0.14,0,0,0.14)
+{animation_2}=curve animate2({animation_time},0.37,0,0.14,0.23)
+{animation_3}=curve animate2({animation_time},0.48,0.14,0.23,0.25)
+{animation_4}=curve animate2({animation_time},0.51,0.37,0.25,0.26)
+{animation_5}=curve animate2({animation_time},0.38,0.62,0.26,0.12)
+{animation_6}=curve animate2({animation_time},9.12,0.88,0.12,9)
+{animation_7}=curve animate2({animation_time},0.25,0,0,0.25)
+{animation_8}=curve animate2({animation_time},0.5,0,0.25,0.25)
+{animation_9}=curve animate2({animation_time},0.5,0.25,0.25,0.25)
+{animation_10}=curve animate2({animation_time},0.5,0.5,0.25,0.25)
+{animation_11}=curve animate2({animation_time},9.25,0.75,0.25,9)
+
+;; Rotation on X-axis moved to the bottom
+{head_rotX}+=-12.5'{animation_0}
+
+{leftArm_rotX}+=-17.5'{animation_2}
+{leftArm_rotX}+=17.5'{animation_3}
+{leftArm_rotX}+=-17.5'{animation_4}
+{leftArm_rotX}+=17.5'{animation_5}
+
+{rightLeg_rotX}+=15'{animation_8}
+{rightLeg_rotX}+=-15'{animation_9}
+{rightLeg_rotX}+=30'{animation_10}
+{rightLeg_rotX}+=-12.5'{animation_11}
+
+{leftLeg_rotX}+=-15'{animation_8}
+{leftLeg_rotX}+=12.5'{animation_9}
+{leftLeg_rotX}+=-2.5'{animation_10}
+{leftLeg_rotX}+=17.5'{animation_11}

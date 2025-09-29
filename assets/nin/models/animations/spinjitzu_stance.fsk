@@ -1,0 +1,66 @@
+{spinjitzu_new_anim_with_spinstart_time}={data}
+{spinjitzu_new_anim_with_spinstart_0}=curve animate2({spinjitzu_new_anim_with_spinstart_time},12.5,0,0.8,11.7)
+{spinjitzu_new_anim_with_spinstart_1}=curve animate2({spinjitzu_new_anim_with_spinstart_time},1,0,0.8,0.2)
+{spinjitzu_new_anim_with_spinstart_2}=curve animate2({spinjitzu_new_anim_with_spinstart_time},11.7,0.8,0.2,11.5)
+{spinjitzu_new_anim_with_spinstart_3}=curve animate2({spinjitzu_new_anim_with_spinstart_time},0.6,0,0.4,0.2)
+{spinjitzu_new_anim_with_spinstart_4}=curve animate2({spinjitzu_new_anim_with_spinstart_time},0.4,0.4,0.2,0.2)
+{spinjitzu_new_anim_with_spinstart_5}=curve animate2({spinjitzu_new_anim_with_spinstart_time},0.4,0.6,0.2,0.2)
+;reset to default pose
+{head_posY} = 0
+{head_posX} = 0
+{head_posZ} = 0
+{head_rotY} = 0
+{head_rotX} = 0
+{head_rotZ} = 0
+
+
+{rightArm_rotX} = 0
+{rightArm_rotY} = 0
+{rightArm_rotZ} = 0
+
+{leftArm_rotX} = 0
+{leftArm_rotY} = 0
+{leftArm_rotZ} = 0
+
+{body_rotX} = 0
+{body_rotY} = 0
+{body_rotZ} = 0
+;real animation code starts here
+{head_rotY}+=-15'{spinjitzu_new_anim_with_spinstart_0}
+
+{body_rotY}+=-22.5'{spinjitzu_new_anim_with_spinstart_1}
+{body_rotY}+=17.5'{spinjitzu_new_anim_with_spinstart_2}
+
+{rightArm_rotX}+=-21.3306331722'{spinjitzu_new_anim_with_spinstart_3}
+{rightArm_rotY}+=36.72604719'{spinjitzu_new_anim_with_spinstart_3}
+{rightArm_rotZ}+=41.44339756'{spinjitzu_new_anim_with_spinstart_3}
+{rightArm_rotX}+=-85.9897520789'{spinjitzu_new_anim_with_spinstart_4}
+{rightArm_rotY}+=19.5100404671'{spinjitzu_new_anim_with_spinstart_4}
+{rightArm_rotZ}+=-10.2308773567'{spinjitzu_new_anim_with_spinstart_4}
+{rightArm_rotX}+=-83.3145563185'{spinjitzu_new_anim_with_spinstart_5}
+{rightArm_rotY}+=-25.2786260021'{spinjitzu_new_anim_with_spinstart_5}
+{rightArm_rotZ}+=-28.9838900807'{spinjitzu_new_anim_with_spinstart_5}
+{rightArm_rotX}+=-83.5897731435'{spinjitzu_new_anim_with_spinstart_2}
+{rightArm_rotY}+=19.4569636487'{spinjitzu_new_anim_with_spinstart_2}
+{rightArm_rotZ}+=-23.9752404715'{spinjitzu_new_anim_with_spinstart_2}
+{rightArm_posX}+=-1{spinjitzu_new_anim_with_spinstart_1}
+{rightArm_posX}+=-1{spinjitzu_new_anim_with_spinstart_2}
+{rightArm_posZ}+=3{spinjitzu_new_anim_with_spinstart_2}
+
+{leftArm_rotX}+=28.4022185046'{spinjitzu_new_anim_with_spinstart_3}
+{leftArm_rotY}+=25.6353911006'{spinjitzu_new_anim_with_spinstart_3}
+{leftArm_rotZ}+=-46.5507544306'{spinjitzu_new_anim_with_spinstart_3}
+{leftArm_rotX}+=77.5565392509'{spinjitzu_new_anim_with_spinstart_4}
+{leftArm_rotY}+=16.2695316258'{spinjitzu_new_anim_with_spinstart_4}
+{leftArm_rotZ}+=-38.028635023'{spinjitzu_new_anim_with_spinstart_4}
+{leftArm_rotX}+=89.5838618983'{spinjitzu_new_anim_with_spinstart_5}
+{leftArm_rotY}+=-27.6319900268'{spinjitzu_new_anim_with_spinstart_5}
+{leftArm_rotZ}+=-28.8339820904'{spinjitzu_new_anim_with_spinstart_5}
+{leftArm_rotX}+=89.6137152448'{spinjitzu_new_anim_with_spinstart_2}
+{leftArm_rotY}+=17.3670180518'{spinjitzu_new_anim_with_spinstart_2}
+{leftArm_rotZ}+=-29.142290044'{spinjitzu_new_anim_with_spinstart_2}
+{leftArm_posX}+=1{spinjitzu_new_anim_with_spinstart_1}
+{leftArm_posZ}+=1{spinjitzu_new_anim_with_spinstart_1}
+{leftArm_posX}+=1{spinjitzu_new_anim_with_spinstart_2}
+{leftArm_posZ}+=-2{spinjitzu_new_anim_with_spinstart_2}
+

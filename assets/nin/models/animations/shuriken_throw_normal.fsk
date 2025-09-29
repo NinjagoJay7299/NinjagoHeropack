@@ -1,0 +1,8 @@
+; {animation_time}={data}
+; {animation_0}=curve animate2({animation_time},10,0,1,9)
+
+; {Center_rotZ}-=1797.5'{animation_0}
+; {Center_posX}-=-405{animation_0}
+
+{Center_rotZ}+= 900'{data}
+{Center_posX}+= 166{data}

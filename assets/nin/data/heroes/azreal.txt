@@ -1,0 +1,84 @@
+Azreals powers {
+    Stats {
+        AC: 18
+        Used 3 times a day for 3 rounds
+        199 hp
+        30ft speed
+        Str 10
+        Dex 16(+3)
+        Con(+5)
+        Wis 19(+4)
+        Cha 15(+2)
+    }
+    Saving throws{
+        Con + 12
+        Int +14
+        Wis +11
+        Cha +9
+    }
+    Damage immunities {
+        Necrotic, poison, psychic, bludgening, piercing/slashing from nonmagical attacks
+        Condition immunities 
+    }
+    Status immunites {
+        Charmed
+        Exhaustion 
+        Frightened 
+        Paralyzed
+        Poisoned
+        Stunned
+    }
+    Legendary resistance {
+        (3/day)
+        If it fails a saving throw it can choose to succeed 
+    }
+    Magic resistance {
+        Advantage on saving throws for spells and magical effects
+    }
+    Actions {
+        Multiattack {
+            Makes 2 death rend attacks and uses bloodcurdling lament if possible 
+        }
+        Death rend {
+            Melee spell attack: +14 to hit, reach 5 ft, one target, hit 23 (3d10 + 7) necrotic damage 
+        }
+        Bloodcurdling Lament (Recharge 5–6). {
+            The false lich emits a hideous shriek charged with malignant energy. 
+            Each creature within 30 feet of the false lich must succeed on a DC 22 Wisdom saving throw or have the frightened condition for 1 minute. 
+            While frightened in this way, a creature also has the unconscious condition. 
+            An affected creature can repeat the saving throw at the end of each of its turns, 
+            ending the effect on itself on a success.
+        }
+    }
+    Spellcasting {
+        The false lich casts one of the following spells, requiring no material components
+        and using Intelligence as the spellcasting ability (spell save DC 22): at will:
+        Detect Magic, 
+        Fly, Mage Hand, 
+        Prestidigitation
+        3/day each: Dispel Magic, Invisibility (self only)
+        1/day each: Globe of Invulnerability, Hold Monster
+    }
+    Bonus actions {
+        Soul Siphon. {
+            The false lich targets one creature it can see within 120 feet of itself. 
+            The target must make a DC 22 Charisma saving throw; if the target has the unconscious condition,
+            it has disadvantage on this saving throw. The target takes 21 (6d6) force damage on a failed save 
+            or half as much damage on a successful one. The false lich then regains a number of hit points equal to the amount 
+            of force damage taken. If this damage reduces the target to 0 hit points, the target immediately dies, its body disappears,
+            and its soul is trapped inside one of the soul gems within the false lich's skull.
+            After 24 hours, the gem transfers the soul to the false lich's creator. 
+            When the false lich is reduced to 0 hit points, it is destroyed and disintegrates, leaving behind the gems. 
+            Crushing a gem releases any souls trapped within, 
+            at which point the soul's body re-forms in an unoccupied space nearest to the gem
+            and in the same state as it was when its soul was trapped.
+        }
+    }
+    Legendary actions {
+        Spiteful Teleport. {
+            The false lich, along with anything it is wearing or carrying, 
+            teleports to an unoccupied space it can see within 60 feet of itself. It then makes one Death Rend attack if possible.
+            Cast a Spell (Costs 2 Actions). The false lich uses Spellcasting.
+        }   
+    }
+}

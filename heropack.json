@@ -1,0 +1,197 @@
+{
+    "name": "Ninjago Heropack",
+    "description": "A Heropack Template.",
+    "domain": "nin",
+    "packFormat": 1,
+    "watermark": "nin",
+    "sounds": {
+      "download": {
+        "repository": "NinjagoJay7299/Ninjago",
+        "version": 0
+      },
+      "range": {
+      "zap": {
+        "distance": 32.0,
+        "sendToAll": "true"
+      },
+      "zap2": {
+        "distance": 32.0,
+        "sendToAll": "true"
+      },
+      "thunder": {
+        "distance": 32.0,
+        "sendToAll": "true"
+      },
+      "cast": {
+        "distance": 32.0,
+        "sendToAll": "true"
+      },
+      "spinjitzu_loop": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      },
+      "spinjitzu_start": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      },
+      "ice_beam": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      },
+      "flames_blade": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      },
+      "flames": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      },
+      "ice_blade": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      },
+      "ice_proj": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      },
+      "airjitzu": {
+        "distance": 16.0,
+        "sendToAll": "true"
+      }
+    }
+  },
+  "damageTypes": {
+    "GOLDEN_WEAPON": "Golden Weapon",
+
+    "SPINJITZU": "Spinjitzu",
+
+    "ELEMENTAL": "Elemental",
+    "WATER": "Water",
+    "ICE": "Ice",
+
+    "VENGESTONE": "Vengestone"
+  },
+    "dataVars": {
+        "sneaking_timer": "FLOAT_INTERP",
+        "Jump": "BOOLEAN",
+        "throwanimation": "BOOLEAN",
+        "powerset": "INTEGER",
+        "use": "BOOLEAN",
+        "powers": "INTEGER",
+        "toss": "BOOLEAN",
+        "spin": "BOOLEAN",        
+        "firesword": "BOOLEAN",
+        "blade": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+        "spinstaff": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+        "nonblade": { "type" : "FLOAT_INTERP", "resetWithoutSuit": false, "resetOnDeath": true },
+        
+        "dragoned": "BOOLEAN",
+        "dragon_timer": "FLOAT_INTERP",
+        "dragon_cooldown": "FLOAT",
+
+        "goded": "BOOLEAN",
+        "god_timer": "FLOAT_INTERP",
+        "god_cooldown": "FLOAT",
+
+        "aired": "BOOLEAN",
+        "airjitzu_timer": "FLOAT_INTERP",
+        "airjitzu_cooldown": "FLOAT",
+
+        "lightning_pulse": { "type": "BOOLEAN", "resetWithoutSuit": true },
+        "lightning_pulse_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+        "lightning_pulse_shooting_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+        "lightning_pulse_hold": { "type": "BOOLEAN", "resetWithoutSuit": true },
+        "lightning_pulse_hold_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": false },
+
+        "surge": "BOOLEAN",
+        "surge_timer": "FLOAT_INTERP",
+        "surge_cooldown": "FLOAT",
+
+        "thrown": "BOOLEAN",
+        "throw_timer": "FLOAT_INTERP",
+        "throw_cooldown": "FLOAT",
+
+        "spinning": "BOOLEAN",
+        "spin_timer": "FLOAT_INTERP",
+        "spin_start_timer": "FLOAT_INTERP",
+        "spin_cooldown": "FLOAT",
+        "spinjitzukey": "BOOLEAN",
+        "spinning_1": "BOOLEAN",
+
+        "throw_started": "BOOLEAN",
+        "throwing": "BOOLEAN",
+        "throw_start_timer": "FLOAT_INTERP",
+        "shurikenkey": "BOOLEAN",
+
+        "speedkey": "BOOLEAN",
+
+        "walking": "BOOLEAN",
+        "walk_timer": "FLOAT_INTERP",
+        "walk_cooldown": "FLOAT",
+
+        "beaming": "BOOLEAN",
+        "beam_timer": "FLOAT_INTERP",
+        "beam_cooldown": "FLOAT",
+
+        "hitting_ground": "BOOLEAN",
+
+        "speed_level": "INTEGER",
+
+        "phase": { "type": "BOOLEAN", "resetWithoutSuit": true },
+        "phase_timer": { "type": "FLOAT", "resetWithoutSuit": true },
+        "vibrate_active": "BOOLEAN",
+        "vibrate_cooldown": "FLOAT",
+        "vibrate_timer": "FLOAT_INTERP",
+        "startedclimb": "BOOLEAN",
+        "startedyaw": "INTEGER",
+        "climb": "FLOAT_INTERP",
+        "climb_bool": "BOOLEAN",
+        "rotationW": "INTEGER",
+
+        "fall_damage_immunity": "FLOAT_INTERP",
+        "fall_damage_immunity_cooldown": "FLOAT",
+        "fall_damage_immunity_timer": "FLOAT_INTERP",
+        "fall_immunity_active": "BOOLEAN",
+
+        "is_default": "BOOLEAN",
+        "isnt_default": "BOOLEAN"
+        
+      },
+      "alts": {
+        "nin:jay": {
+          "tornament": "Tornament Of Elements",
+          "jungle": "Tornament Of Elements (Jungle)",
+          "pilot": "Pilot Season 1"
+        },
+        "nin:zane": {
+          "jungle": "Tornament Of Elements",
+          "pilot": "Pilot Season 1"
+        },
+        "nin:cole": {
+          "tornament": "Tornament Of Elements",
+          "jungle": "Tornament Of Elements (Jungle)",
+          "pilot": "Pilot Season 1"
+        },
+        "nin:kai": {
+          "pilot": "Pilot Season 1"
+        },
+        "nin:kai_tournament": {
+          "skybound": "Skybound",
+          "jungle": "Tornament Of Elements (Jungle)"
+        },
+        "nin:wu": {
+        },
+        "nin:jay_sog": {
+          "hunted": "Hunted Season 9"
+        },
+        "nin:zane_sog": {
+          "hunted": "Hunted Season 9"
+        },
+        "nin:cole_sog": {
+          "hunted": "Hunted Season 9"
+        },
+        "nin:kai_sog": {
+          "hunted": "Hunted Season 9"
+        }
+      }
+  }

@@ -1,0 +1,6 @@
+{blocking_time}={data}
+{blocking_0}=curve animate2({blocking_time},15,0,1,14)
+
+{R_arm_rotX}-=57.2021907428'{blocking_0}
+{R_arm_rotY}-=-45.0507463659'{blocking_0}
+{R_arm_rotZ}-=24.5160382863'{blocking_0}

@@ -1,0 +1,144 @@
+{
+  "particles": [
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, 10.0, -0.0],
+        "fp": [2.0, 3.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, 7.0, -0.0],
+        "fp": [2.0, 3.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, 5.0, -0.0],
+        "fp": [2.0, 3.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, 11.0, -0.0],
+        "fp": [2.0, 3.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, 0.0, -0.0],
+        "fp": [2.0, 3.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, -5.0, -0.0],
+        "fp": [2.0, -5.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "FLAME",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, -4.5, 0.0],
+        "fp": [2.0, -10.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "SMOKE",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, 10.0, -0.0],
+        "fp": [2.0, 3.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "SMOKE",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, -5.0, -0.0],
+        "fp": [2.0, -5.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    },
+    {
+      "type": "SMOKE",
+      "anchor": "body",
+      "amount": 4,
+      "offset": {
+        "tp": [0.0, -4.5, 0.0],
+        "fp": [2.0, -10.0, -6.0]
+      },
+      "motion": [0.1, 0.05, -0.05],
+      "randOffset": [0.1, 0.05, -0.05],
+      "randMotion": [0.1, 0.05, -0.05],
+      "mirror": "!firstPerson",
+      "lockFPYaw": true
+    }
+  ]
+}

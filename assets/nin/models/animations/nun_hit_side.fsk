@@ -1,0 +1,14 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},0.9714285714,0,0.4761904762,0.4952380952)
+{animation_1}=curve animate2({animation_time},20.5238095238,0.47619047619047616,0.4952380952,20.0285714286)
+
+{nunchuck2_rotY}+=90'{animation_0}
+{nunchuck2_rotZ}+=140'{animation_0}
+{nunchuck2_rotX}+=37.4537195571'{animation_1}
+{nunchuck2_rotY}+=72.0340208398'{animation_1}
+{nunchuck2_rotZ}+=199.3179438236'{animation_1}
+{nunchuck2_posX}+=-4{animation_0}
+{nunchuck2_posY}+=-11{animation_0}
+{nunchuck2_posX}+=12{animation_1}
+{nunchuck2_posY}+=-11{animation_1}
+{nunchuck2_posZ}+=13{animation_1}

@@ -1,0 +1,19 @@
+{
+    "display": {
+      "name": {
+        "translate": "Ice Master"
+      },
+      "description": {
+        "translate": "Ice Master"
+      },
+      "icon": {
+        "texture": "nin:textures/gui/nodes/ice.png"
+      },
+      "isLevelable": true
+    },
+    "requirements": [ ],
+    "price": {
+      "TUTRIDIUM": 6,
+      "XP_LEVELS": 10
+    }
+  }

@@ -1,0 +1,5 @@
+{data} = curve {data}
+
+{leftArm_rotX} = 0
+{leftArm_rotY} = {leftArm_rotZ} * 10
+{leftArm_rotZ} = {leftArm_rotZ} * 10

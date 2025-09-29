@@ -1,0 +1,20 @@
+{
+    "suit": "nin:wu",
+    "requirements": [
+      "fiskheroes:tier6_7",
+      "fiskheroes:flight",
+      "nin:ninja"
+    ],
+    "criteria": {
+      "live_before_time_had_a_name": {
+        "trigger":"fiskheroes:tick",
+        "description":"Live before time had a name",
+        "minSuccessCount":432000,
+        "condition": {
+          "variables": {
+            "player":"PLAYER_TICKING"
+          }
+        }
+    }
+}
+}

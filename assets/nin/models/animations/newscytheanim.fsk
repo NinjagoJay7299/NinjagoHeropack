@@ -1,0 +1,50 @@
+{data} = curve {data}
+
+
+; {body_rotX} @ {data} -> {head_posX} + {body_posX}
+{body_rotY} @ {data} -> {head_rotY} + {body_rotY}
+; {body_rotZ} @ {data} -> {head_rotZ} + {body_rotZ}
+
+; {rightArm_rotX} @ {data} -> {head_rotX} + {rightArm_rotX}
+{rightArm_rotY} @ {data} -> {head_rotY} + {rightArm_rotY}
+; {rightArm_rotZ} @ {data} -> {head_rotZ} + {rightArm_rotZ}
+
+; {leftArm_rotX} @ {data} -> {head_rotX} + {leftArm_rotX}
+{leftArm_rotY} @ {data} -> {head_rotY} + {leftArm_rotY}
+; {leftArm_rotZ} @ {data} -> {head_rotZ} + {leftArm_rotZ}
+
+
+; {leftLeg_rotX} @ {data} -> {head_rotX} + {leftLeg_rotX}
+{leftLeg_rotY} @ {data} -> {head_rotY} + {leftLeg_rotY}
+; {leftLeg_rotZ} @ {data} -> {head_rotZ} + {leftLeg_rotZ}
+
+; {rightLeg_rotX} @ {data} -> {head_rotX} + {rightLeg_rotX}
+{rightLeg_rotY} @ {data} -> {head_rotY} + {rightLeg_rotY}
+; {rightLeg_rotZ} @ {data} -> {head_rotZ} + {rightLeg_rotZ}
+
+; {body_posX} @ {data} -> {head_posX} 
+; {body_posY} @ {data} -> {head_posY} 
+{body_posZ} @ {data} -> {head_posZ} 
+
+; {rightArm_posX} @ {data} -> {head_posX} 
+; {rightArm_posY} @ {data} -> {head_posY} 
+{rightArm_posZ} @ {data} -> {head_posZ} 
+
+; {leftArm_posX} @ {data} -> {head_posX} 
+; {leftArm_posY} @ {data} -> {head_posY} 
+{leftArm_posZ} @ {data} -> {head_posZ} 
+
+
+; {leftLeg_posX} @ {data} -> {head_posX} 
+; {leftLeg_posY} @ {data} -> {head_posY} 
+{leftLeg_posZ} @ {data} -> {head_posZ}
+
+; {rightLeg_posX} @ {data} -> {head_posX} 
+; {rightLeg_posY} @ {data} -> {head_posY} 
+{rightLeg_posZ} @ {data} -> {head_posZ} 
+
+out "firstPerson" (true)
+out "translate" (0{data}, -0.5{data}, 0{data})
+
+out "firstPerson" (true)
+out "translate" (0{data}, -0.5{data}, 0{data})

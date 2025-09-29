@@ -1,0 +1,19 @@
+{
+    "display": {
+      "name": {
+        "translate": "Earth Master"
+      },
+      "description": {
+        "translate": "Earth Master"
+      },
+      "icon": {
+        "texture": "nin:textures/gui/nodes/Earth.png"
+      },
+      "isLevelable": true
+    },
+    "requirements": [ ],
+    "price": {
+      "TUTRIDIUM": 6,
+      "XP_LEVELS": 10
+    }
+  }

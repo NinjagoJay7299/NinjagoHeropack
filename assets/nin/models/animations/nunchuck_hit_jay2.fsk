@@ -1,0 +1,29 @@
+{hit_nunchuck_time}={data}
+{hit_nunchuck_0}=curve animate2({hit_nunchuck_time},0.5,0,0.25,0.25)
+{hit_nunchuck_1}=curve animate2({hit_nunchuck_time},9.75,0.25,0.25,9.5)
+{hit_nunchuck_2}=curve animate2({hit_nunchuck_time},10,0,0.25,9.75)
+{hit_nunchuck_3}=curve animate2({hit_nunchuck_time},0.25,0,0,0.25)
+
+{bone4_rotZ}+=20'{hit_nunchuck_0}
+{bone4_rotZ}+=40'{hit_nunchuck_1}
+
+{bone3_rotZ}+=5'{hit_nunchuck_2}
+{bone3_posY}+=2{hit_nunchuck_2}
+
+{bone_rotZ}+=90'{hit_nunchuck_2}
+
+{nunchuck2_rotZ}+=110'{hit_nunchuck_2}
+{nunchuck2_posY}+=16.5{hit_nunchuck_3}
+{nunchuck2_posX}+=2{hit_nunchuck_2}
+{nunchuck2_posY}+=-2.5{hit_nunchuck_2}
+
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},5,0,0,5)
+{animation_1}=curve animate2({animation_time},5,0,1,4)
+
+{bone4_rotZ}+=380'{animation_0}
+
+{bone5_rotZ}+=122.5'{animation_1}
+
+{nunchuck2_rotZ}+=12.5'{animation_0}
+{nunchuck2_posY}+=16{animation_0}

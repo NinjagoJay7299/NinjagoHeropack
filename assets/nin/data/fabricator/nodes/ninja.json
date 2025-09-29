@@ -1,0 +1,20 @@
+{
+    "display": {
+      "name": {
+        "translate": "Ninja"
+      },
+      "description": {
+        "translate": "Ninja Of Ninjago"
+      },
+      "icon": {
+        "texture": "nin:textures/gui/nodes/logo.png"
+      },
+      "isLevelable": true
+    },
+    "requirements": [ ],
+    "price": {
+      
+        }
+      }
+    
+  

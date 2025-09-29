@@ -1,0 +1,4 @@
+{twist_time}={data}
+{twist_0}=curve animate2({twist_time},5,0,1,4)
+
+{right_rotX}+=180'{twist_0}

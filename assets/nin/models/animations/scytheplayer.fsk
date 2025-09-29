@@ -1,0 +1,33 @@
+{Template_time}={data}
+{Template_0}=curve animate2({Template_time},10,0,0,10)
+{Template_1}=curve animate2({Template_time},1,0,0,1)
+{Template_2}=curve animate2({Template_time},10,0,1,9)
+
+{head_posY}+=1{Template_0}
+{head_posZ}+=-1{Template_0}
+{head_rotY} = 0
+{head_rotX} = 0
+
+{body_rotX}+=20'{Template_0}
+{body_posY}+=1{Template_0}
+{body_posZ}+=-1{Template_0}
+
+{rightArm_rotY} = 0
+{rightArm_rotX} = 0
+{rightArm_rotZ} = 0
+{rightArm_rotX}+=-90'{Template_1}
+{rightArm_rotX}+=-5'{Template_2}
+{rightArm_posY}+=1{Template_2}
+
+{leftArm_rotX} = 0
+{leftArm_rotY} = 0
+{leftArm_rotZ} = 0
+{leftArm_rotX}+=-90'{Template_1}
+{leftArm_rotX}+=-4.1248355846'{Template_2}
+{leftArm_rotY}+=22.224850364'{Template_2}
+{leftArm_rotZ}+=51.7123904818'{Template_2}
+
+{leftLeg_rotX}+=22.5'{Template_0}
+{leftLeg_posZ}+=3.5{Template_0}
+
+out "rotate" (({bodyYaw} - {yaw}), 0, 1, 0) 

@@ -1,0 +1,19 @@
+{
+    "display": {
+      "name": {
+        "translate": "Fire Master"
+      },
+      "description": {
+        "translate": "Fire Master"
+      },
+      "icon": {
+        "texture": "nin:textures/gui/nodes/Fire.png"
+      },
+      "isLevelable": true
+    },
+    "requirements": [ ],
+    "price": {
+      "TUTRIDIUM": 6,
+      "XP_LEVELS": 10
+    }
+  }

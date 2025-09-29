@@ -1,0 +1,9 @@
+{
+  "name": "Shurikens Of Ice",
+  "permission": "USE_SHURIKENS_OF_ICE",
+  "holdingPose": "DUAL",
+  "melee": {
+    "attackDamage": 10.0,
+    "knockback": 0.2
+  }
+}

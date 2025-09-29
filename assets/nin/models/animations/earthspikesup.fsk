@@ -1,0 +1,29 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},10.2,0,0.1176470588,10.0823529412)
+{animation_1}=curve animate2({animation_time},10.2,0,0.2450980392,9.9549019608)
+{animation_2}=curve animate2({animation_time},10.2,0,0.362745098,9.837504902)
+{animation_3}=curve animate2({animation_time},10.2,0,0.4901960784,9.7098039216)
+{animation_4}=curve animate2({animation_time},10.2,0,0.6274509804,9.5750490196)
+{animation_5}=curve animate2({animation_time},10.2,0,0.7352941176,9.4647058824)
+{animation_6}=curve animate2({animation_time},10.2,0,0.8333333333,9.3666666667)
+{animation_7}=curve animate2({animation_time},10.2,0,0.9803921569,9.2196078431)
+
+{bone2_posY}+=-40{animation_0}
+
+{bone11_posY}+=-40{animation_1}
+
+{bone3_posY}+=-40{animation_1}
+
+{bone4_posY}+=-40{animation_2}
+
+{bone5_posY}+=-40{animation_3}
+
+{bone6_posY}+=-40{animation_4}
+
+{bone7_posY}+=-40{animation_5}
+
+{bone8_posY}+=-40{animation_6}
+
+{bone9_posY}+=-40{animation_7}
+
+; {bone10_rotX}+=-1'{head_rotX}

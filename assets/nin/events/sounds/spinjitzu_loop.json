@@ -1,0 +1,7 @@
+{
+    "sound": "nin:suit.spinjitzu_loop",
+    "parent": "fiskheroes:sound_base",
+    "condition": "fiskheroes:energy_projection",
+    "volume": "fiskheroes:energy_projection_timer",
+    "loop": true
+}

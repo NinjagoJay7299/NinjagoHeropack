@@ -1,0 +1,10 @@
+{animation3_time}={data}
+{animation3_0}=curve animate2({animation3_time},10,0,1,9)
+
+{bone_rotX}+=-90'{animation3_0}
+
+{nunchuck_rotX}-=225'{animation3_0}
+
+{bone3_rotX}+=-27.5'{animation3_0}
+
+{bone2_rotX}+=22.5'{animation3_0}

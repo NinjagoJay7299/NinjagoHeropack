@@ -1,0 +1,10 @@
+{
+    "suit": "nin:blake",
+    "requirements": [
+      "fiskheroes:tier10",
+      "fiskheroes:ranged3",
+      "fiskheroes:melee3",
+      "fiskheroes:flight",
+      "nin:earth"
+  ]
+}

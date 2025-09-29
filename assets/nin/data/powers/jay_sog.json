@@ -1,0 +1,282 @@
+{
+    "name": "Lightning Master",
+    "modifiers": {
+      "fiskheroes:super_speed": {
+        "canUseTreadmill": false
+      },
+      "fiskheroes:blade": {
+        "soundEvents": {
+          "ENABLE": "fiskheroes:mk50_blade_enable",
+          "DISABLE": "fiskheroes:mk50_blade_disable"
+        }
+      },
+      "fiskheroes:transformation|spin_start": {
+        "key": "SPINJITZU",
+        "isToggle": false,
+        "transformation": {
+          "toggleData": "nin:dyn/spinning",
+          "timerData": "nin:dyn/spin_start_timer",
+          "time": 100000
+        },
+        "soundEvents": {
+          "ENABLE": "nin:airjitzu"
+        }
+      },
+      "fiskheroes:transformation|spinning": {
+        "isToggle": false,
+        "transformation": {
+          "toggleData": "nin:dyn/spinning_1",
+          "timerData": "nin:dyn/spin_timer",
+          "time": 8
+        },
+        "soundEvents": {
+          "ENABLE": "nin:airjitzu"
+        }
+      },
+      "fiskheroes:energy_projection": {
+        "damageProfile": {
+          "damage": 10.0,
+          "types": {
+            "COSMIC": 1.0,
+            "ELECTRICITY": 1.0
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 80,
+            "ADD_KNOCKBACK": 15
+          }
+        },
+        "range": 2,
+        "radius": 4.0,
+        "soundEvents": {
+          "SHOOT": "nin:spinjitzu_start",
+          "BEAM_AMBIENT": "nin:spinjitzu_loop"
+        }
+      },
+      "fiskheroes:flight": {
+        "soundEvents": {
+          "ENABLE": "nin:airjitzu"
+        }
+      },
+      "fiskheroes:charged_beam|normal": {
+        "damageProfile": {
+          "damage": 7.0,
+          "types": {
+            "ENERGY": 1.0,
+            "ELECTRICITY": 0.5
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 20
+          }
+        },
+        "chargeTime": 20,
+        "duration": 1000,
+        "cooldownTime": 40,
+        "range": 32.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "SHOOT": "nin:zap",
+          "BEAM_AMBIENT": "nin:zap"
+        }
+      },
+      "fiskheroes:charged_beam|stun": {
+        "damageProfile": {
+          "damage": 3.0,
+          "types": {
+            "ENERGY": 1.0,
+            "ELECTRICITY": 1.5
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 20,
+            "EFFECTS": [
+                {
+                    "id": "minecraft:slowness",
+                    "duration": 30,
+                    "amplifier": 30,
+                    "chance": 1
+                },
+                {
+                    "id": "minecraft:weakness",
+                    "duration": 16,
+                    "amplifier": 12,
+                    "chance": 1
+                }
+            ]
+          }
+        },
+        "chargeTime": 8,
+        "duration": 8,
+        "cooldownTime": 5,
+        "range": 2.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "SHOOT": "nin:zap",
+          "BEAM_AMBIENT": "nin:zap"
+        }
+      },
+      "fiskheroes:lightning_cast|normal": {
+        "damageProfile": {
+          "damage": 16.0,
+          "types": {
+            "ELECTRICITY": 0.25
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "LIGHTNING_STRIKE": 0.1
+          }
+        },
+        "range": 10.0,
+        "chainRadius": 16.0,
+        "cooldownTime": 20,
+        "soundEvents": {
+          "SHOOT": "fiskheroes:lightning_cast"
+        }
+      },
+      "fiskheroes:lightning_cast|blade": {
+        "damageProfile": {
+          "damage": 16.0,
+          "types": {
+            "ELECTRICITY": 0.25
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "LIGHTNING_STRIKE": 0.1
+          }
+        },
+        "range": 10.0,
+        "chainRadius": 16.0,
+        "cooldownTime": 20,
+        "soundEvents": {
+          "SHOOT": "fiskheroes:lightning_cast"
+        }
+      },
+      "fiskheroes:slow_motion": {
+        "soundEvents": {
+          "ENABLE": ["fiskheroes:slow_motion_enable_cw"],
+            "DISABLE": ["fiskheroes:slow_motion_disable_cw"]
+        }
+      },
+      "fiskheroes:leaping": {
+        "leapAmount": [0.5, 0.4]
+      },
+      "fiskheroes:controlled_flight": {
+        "speed": 0.1,
+        "boostSpeed": 0.1,
+        "canBoost": true,
+        "collision": {
+          "blocks": {
+            "stopFlying": false,
+            "takeDamage": false
+          },
+          "entities": {
+            "stopFlying": false,
+            "dealDamage": false
+          }
+        },
+        "knockback": 0.4,
+        "soundEvents": {
+          "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+          "BOOST": "fiskheroes:flight_boost"
+        }
+      },
+      "fiskheroes:shield":{},
+      "fiskheroes:transformation": {
+        "key": "STEEL_TRANSFORM",
+        "transformation": {
+          "toggleData": "fiskheroes:dyn/steeled",
+          "timerData": "fiskheroes:dyn/steel_timer",
+          "time": 8
+        }
+      },
+      "fiskheroes:cooldown": {
+        "cooldown": {
+          "toggleData": "fiskheroes:dyn/steeled",
+          "cooldownData": "fiskheroes:dyn/steel_cooldown",
+          "duration": 125,
+          "recovery": 1.0
+        }
+      },
+      "fiskheroes:transformation|pulse": {
+            "key": "LIGHTNING_PULSE",
+            "isToggle": false,
+            "transformation": {
+              "toggleData": "nin:dyn/lightning_pulse",
+              "timerData": "nin:dyn/lightning_pulse_timer",
+              "time": 2
+            },
+            "soundEvents": {
+              "ENABLE": "fiskheroes:black_lightning_lightning_cast"
+            }
+        },
+        "fiskheroes:transformation|hold": {
+            "key": "LIGHTNING_PULSE_HOLD",
+            "isToggle": false,
+            "transformation": {
+              "toggleData": "nin:dyn/lightning_pulse_hold",
+              "timerData": "nin:dyn/lightning_pulse_hold_timer",
+              "time": 2
+            }
+        },
+        "fiskheroes:transformation|fall": {
+          "key": "TENTACLES",
+          "transformation": {
+            "toggleData": "nin:dyn/fall_immunity_active",
+            "timerData": "nin:dyn/fall_damage_immunity",
+            "time": 8
+          },
+          "soundEvents": {
+            "ENABLE": "nin:airjitzu"
+          }
+        },
+        "fiskheroes:cooldown|fall": {
+          "cooldown": {
+            "toggleData": "nin:dyn/fall_immunity_active",
+            "cooldownData": "nin:dyn/fall_damage_immunity_cooldown",
+            "duration": 50,
+            "recovery": 1.0
+          }
+        },
+        "fiskheroes:tentacles": {
+          "tentacles": [
+            [0.7, 0, 0.4],
+            [-0.7, 0, 0.4]
+          ],
+          "climbing": {
+            "speed": 0.25,
+            "range": 1,
+            "tolerance": 2,
+            "minAnchorPoints": 1,
+            "anchorPointZones": [
+              ["FRONT", "FRONT", "FRONT"],
+              ["FRONT", "FRONT", "FRONT"]
+            ]
+          }
+        },
+    "fiskheroes:metal_skin": {}
+    },
+    "hud": [
+      {
+        "type": "CIRCLE",
+        "color": "0x0000FF",
+        "data": "fiskheroes:beam_charge"
+      },
+      {
+        "type": "CIRCLE",
+        "color": "0x0000FF",
+        "data": "fiskheroes:lightsout_timer"
+      },
+      {
+        "type": "PROGRESS",
+        "texture": "fiskheroes:textures/gui/bars/steel_transformation.png",
+        "data": "fiskheroes:dyn/steel_cooldown"
+      },
+      {
+        "type": "CIRCLE",
+        "color": "0x0049FF",
+        "data": "nin:dyn/lightning_pulse_timer"
+      }
+      
+    ]
+  }

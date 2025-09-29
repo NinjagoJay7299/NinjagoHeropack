@@ -1,0 +1,23 @@
+{lower_time}={data}
+{lower_0}=curve animate2({lower_time},20,0,1,19)
+
+{R_arm_rotX} += 1' {lower_0} * {rightArm_X}
+{R_arm_rotY} += 1' {lower_0} * {rightArm_Y}
+{R_arm_rotZ} += 1' {lower_0} * {rightArm_Z}
+
+{L_arm_rotX} += 1' {lower_0} * {leftArm_X}
+{L_arm_rotY} += 1' {lower_0} * {leftArm_Y}
+{L_arm_rotZ} += 1' {lower_0} * {leftArm_Z}
+
+{body_rot_Y} += 1' {lower_0} * {body_X}
+{body_rot_Z} += 1' {lower_0} * {body_Y}
+{body_rot_Z} += 1' {lower_0} * {body_Z}
+
+
+{L_leg_rotX} += 1' {lower_0} * {leftLeg_X}
+{L_leg_rotY} += 1' {lower_0} * {leftLeg_Y}
+{L_leg_rotZ} += 1' {lower_0} * {leftLeg_Z}
+
+{R_leg_rotX} += 1' {lower_0} * {rightLeg_X}
+{R_leg_rotY} += 1' {lower_0} * {rightLeg_Y}
+{R_leg_rotZ} += 1' {lower_0} * {rightLeg_Z}

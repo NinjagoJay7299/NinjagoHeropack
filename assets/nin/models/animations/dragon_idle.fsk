@@ -1,0 +1,4 @@
+{data} = {data}
+{dragon_head_rotX}+={head_rotX}*{data}
+{dragon_head_rotY}+={head_rotY}*{data}
+{dragon_head_rotZ}+={head_rotZ}*{data}

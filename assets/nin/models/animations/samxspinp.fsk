@@ -1,0 +1,16 @@
+{spinjitzu_time}={data}
+{spinjitzu_0}=curve animate2({spinjitzu_time},0.25,0,0.12,0.13)
+{spinjitzu_1}=curve animate2({spinjitzu_time},0.23,0.12,0.13,0.1)
+{spinjitzu_2}=curve animate2({spinjitzu_time},0.25,0.25,0.1,0.15)
+{spinjitzu_3}=curve animate2({spinjitzu_time},0.28,0.35,0.15,0.13)
+{spinjitzu_4}=curve animate2({spinjitzu_time},0.25,0.5,0.13,0.12)
+{spinjitzu_5}=curve animate2({spinjitzu_time},0.37,0.63,0.12,0.25)
+{spinjitzu_6}=curve animate2({spinjitzu_time},9.25,0.75,0.25,9)
+
+{bone6_rotY}+=360'{spinjitzu_0}
+{bone6_rotY}+=720'{spinjitzu_1}
+{bone6_rotY}+=1080'{spinjitzu_2}
+{bone6_rotY}+=1440'{spinjitzu_3}
+{bone6_rotY}+=1800'{spinjitzu_4}
+{bone6_rotY}+=2160'{spinjitzu_5}
+{bone6_rotY}+=2520'{spinjitzu_6}

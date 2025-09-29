@@ -1,0 +1,53 @@
+{animation2_time}={data}
+{animation2_0}=curve animate2({animation2_time},10,0,0,10)
+{animation2_1}=curve animate2({animation2_time},0.14,0,0,0.14)
+{animation2_2}=curve animate2({animation2_time},0.39,0,0.14,0.25)
+{animation2_3}=curve animate2({animation2_time},0.48,0.14,0.25,0.23)
+{animation2_4}=curve animate2({animation2_time},0.48,0.39,0.23,0.25)
+{animation2_5}=curve animate2({animation2_time},0.38,0.62,0.25,0.13)
+{animation2_6}=curve animate2({animation2_time},9.13,0.87,0.13,9)
+{animation2_7}=curve animate2({animation2_time},0.25,0,0,0.25)
+{animation2_8}=curve animate2({animation2_time},0.5,0,0.25,0.25)
+{animation2_9}=curve animate2({animation2_time},0.5,0.25,0.25,0.25)
+{animation2_10}=curve animate2({animation2_time},0.5,0.5,0.25,0.25)
+{animation2_11}=curve animate2({animation2_time},9.25,0.75,0.25,9)
+
+{head_rotY}+=-42.4787258232'{animation2_0}
+{head_rotZ}+=33.6634863884'{animation2_0}
+{head_posX}+=6.75{animation2_0}
+{head_posY}+=3.26{animation2_0}
+{head_posZ}+=1.1{animation2_0}
+
+{body_rotZ}+=30'{animation2_0}
+{body_posX}+=6.9{animation2_0}
+{body_posY}+=3.05{animation2_0}
+{body_posZ}+=-0.1{animation2_0}
+
+{rightArm_rotZ}+=-17.5'{animation2_0}
+{rightArm_posX}+=16{animation2_0}
+{rightArm_posY}+=4.9{animation2_0}
+
+{leftArm_rotZ}+=75'{animation2_1}
+{leftArm_rotZ}+=75'{animation2_2}
+{leftArm_rotZ}+=75'{animation2_3}
+{leftArm_rotZ}+=75'{animation2_4}
+{leftArm_rotZ}+=75'{animation2_5}
+{leftArm_rotZ}+=75'{animation2_6}
+{leftArm_posX}+=-2.5{animation2_0}
+{leftArm_posY}+=-0.5{animation2_0}
+
+{rightLeg_rotZ}+=55'{animation2_7}
+{rightLeg_rotZ}+=55'{animation2_8}
+{rightLeg_rotZ}+=55'{animation2_9}
+{rightLeg_rotZ}+=55'{animation2_10}
+{rightLeg_rotZ}+=55'{animation2_11}
+{rightLeg_posX}+=6{animation2_0}
+{rightLeg_posY}+=-4{animation2_0}
+
+{leftLeg_rotZ}+=50'{animation2_7}
+{leftLeg_rotZ}+=50'{animation2_8}
+{leftLeg_rotZ}+=50'{animation2_9}
+{leftLeg_rotZ}+=50'{animation2_10}
+{leftLeg_rotZ}+=50'{animation2_11}
+{leftLeg_posX}+=1{animation2_0}
+{leftLeg_posY}+=2{animation2_0}

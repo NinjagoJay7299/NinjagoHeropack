@@ -1,0 +1,12 @@
+{lower_time}={data}
+{lower_0}=curve animate2({lower_time},20,0,1,19)
+
+{bone4_rotX}-=12.5'{lower_0}
+{bone4_posY}-=3{lower_0}
+{bone4_posZ}-=0.3{lower_0}
+
+{bone3_rotX}-=12.5'{lower_0}
+{bone3_posY}-=3{lower_0}
+
+{bone2_posY}-=3{lower_0}
+{bone2_posZ}-=-1{lower_0}

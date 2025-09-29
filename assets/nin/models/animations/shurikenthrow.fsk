@@ -1,0 +1,3 @@
+{data} = {data}
+{Core_rotX} += 4.0pi*{data}
+{Core_posY} += 200{data}

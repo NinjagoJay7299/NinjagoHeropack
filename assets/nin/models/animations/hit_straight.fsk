@@ -1,0 +1,55 @@
+{hit1_time}={data}
+{hit1_0}=curve animate2({hit1_time},2.2,0,1,1.2)
+{hit1_1}=curve animate2({hit1_time},0.1363636364,0,0,0.1363636364)
+{hit1_2}=curve animate2({hit1_time},2.2,0,0.1363636364,2.0636363636)
+{hit1_3}=curve animate2({hit1_time},0.5,0,0.1363636364,0.3636363636)
+{hit1_4}=curve animate2({hit1_time},0.5454545455,0.13636363636363635,0.3636363636,0.1818181818)
+{hit1_5}=curve animate2({hit1_time},1.7,0.5,0.1818181818,1.5181818182)
+{hit1_6}=curve animate2({hit1_time},2.0636363636,0.13636363636363635,0.8636363636,1.2)
+{hit1_7}=curve animate2({hit1_time},1,0,0.6818181818,0.3181818182)
+{hit1_8}=curve animate2({hit1_time},0.4545454545,0,0.1818181818,0.2727272727)
+{hit1_9}=curve animate2({hit1_time},0.5,0.18181818181818182,0.2727272727,0.2272727273)
+{hit1_10}=curve animate2({hit1_time},1.7454545455,0.4545454545454546,0.2272727273,1.5181818182)
+{hit1_11}=curve animate2({hit1_time},0.1818181818,0,0,0.1818181818)
+{hit1_12}=curve animate2({hit1_time},0.6818181818,0,0.1818181818,0.5)
+{hit1_13}=curve animate2({hit1_time},0.8181818182,0.18181818181818182,0.5,0.3181818182)
+{hit1_14}=curve animate2({hit1_time},1.5181818182,0.6818181818181818,0.3181818182,1.2)
+
+{left_posX}+=-3{hit1_0}
+{left_posY}+=2{hit1_0}
+
+{bone_rotZ}+=-35'{hit1_1}
+{bone_rotZ}+=50'{hit1_2}
+
+{lightning_rotZ}+=52.5'{hit1_3}
+{lightning_rotX}+=180'{hit1_4}
+{lightning_rotZ}+=52.5'{hit1_4}
+{lightning_rotX}+=180'{hit1_5}
+{lightning_rotZ}+=75'{hit1_5}
+{lightning_posZ}+=2{hit1_6}
+
+{bone2_posZ}+=-1{hit1_7}
+
+{right_rotZ}+=50'{hit1_8}
+{right_rotZ}+=217.5'{hit1_9}
+{right_rotZ}+=247.5'{hit1_10}
+{right_posX}+=8{hit1_11}
+{right_posY}+=-14{hit1_11}
+{right_posX}+=8{hit1_12}
+{right_posY}+=-17{hit1_12}
+{right_posX}+=15.25{hit1_13}
+{right_posY}+=-16{hit1_13}
+{right_posX}+=15.5{hit1_14}
+{right_posY}+=-16{hit1_14}
+
+{hit2_time}={data}
+{hit2_0}=curve animate2({hit2_time},3,0,0.8333333333,2.1666666667)
+{hit2_1}=curve animate2({hit2_time},3,0,1,2)
+
+{lightning_rotZ}+=50'{hit2_0}
+
+{bone2_rotZ}+=75'{hit2_0}
+{bone2_posX}+=-2{hit2_0}
+{bone2_posY}+=-1{hit2_0}
+
+{right_rotZ}+=52.5'{hit2_1}

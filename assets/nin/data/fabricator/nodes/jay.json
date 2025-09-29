@@ -1,0 +1,9 @@
+{
+    "suit": "nin:jay",
+    "requirements": [
+      "fiskheroes:tier6_7",
+      "fiskheroes:flight",
+      "nin:ninja",
+      "nin:lightning"
+    ]
+  }

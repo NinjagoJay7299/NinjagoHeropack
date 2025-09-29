@@ -1,0 +1,14 @@
+{hit2_time}={data}
+{hit2_0}=curve animate2({hit2_time},4.1,0,0.6097560976,3.4902439024)
+{hit2_1}=curve animate2({hit2_time},0.6097560976,0,0,0.6097560976)
+
+{lightning_rotZ}+=50'{hit2_0}
+
+{bone2_rotZ}+=75'{hit2_0}
+{bone2_posX}+=-2{hit2_0}
+{bone2_posY}+=-1{hit2_0}
+
+{right_rotZ}+=180'{hit2_0}
+{right_posY}+=-1{hit2_1}
+{right_posX}+=20{hit2_0}
+{right_posY}+=-27{hit2_0}

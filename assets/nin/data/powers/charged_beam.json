@@ -1,0 +1,56 @@
+{
+    "name": "",
+    "modifiers": {
+      "fiskheroes:charged_beam|normal": {
+        "damageProfile": {
+          "damage": 7.0,
+          "types": {
+            "ENERGY": 1.0,
+            "FIRE": 0.5
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 20
+          }
+        },
+        "chargeTime": 20,
+        "duration": 1000,
+        "cooldownTime": 40,
+        "range": 32.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "SHOOT": "nin:zap",
+          "BEAM_AMBIENT": "nin:zap"
+        }
+      },
+      "fiskheroes:charged_beam|stun": {
+        "damageProfile": {
+          "damage": 17.0,
+          "types": {
+            "ENERGY": 1.0,
+            "FIRE": 0.5
+          },
+          "properties": {
+            "COOK_ENTITY": true,
+            "HEAT_TRANSFER": 20
+          }
+        },
+        "chargeTime": 20,
+        "duration": 1000,
+        "cooldownTime": 40,
+        "range": 32.0,
+        "radius": 0.1,
+        "soundEvents": {
+          "SHOOT": "nin:zap",
+          "BEAM_AMBIENT": "nin:zap"
+        }
+      }
+    },
+    "hud": [
+      {
+        "type": "CIRCLE",
+        "color": "0x0000FF",
+        "data": "fiskheroes:beam_charge"
+      } 
+    ]
+  }

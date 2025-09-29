@@ -1,0 +1,6 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "nin:suit.airjitzu",
+    "volume" : 1.0,
+    "loop": false
+}

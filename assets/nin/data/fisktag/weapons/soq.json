@@ -1,0 +1,10 @@
+{
+  "name": "Scythe Of Quakes",
+  "permission": "USE_SCYTHE_OF_QUAKES",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 12.5,
+    "knockback": 0.2
+  }
+}
+

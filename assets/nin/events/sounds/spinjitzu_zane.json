@@ -1,0 +1,7 @@
+{
+    "sound": "nin:suit.spinjitzu_loop",
+    "parent": "fiskheroes:sound_base",
+    "condition": "fiskheroes:beam_charging",
+    "volume": "fiskheroes:beam_shooting_timer",
+    "loop": true
+}

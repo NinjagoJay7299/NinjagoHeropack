@@ -1,0 +1,14 @@
+{animation_time}={data}
+{animation_0}=curve animate2({animation_time},10,0,0,10)
+
+{rightLeg_rotX}-=-60.1277077756'{animation_0}
+{rightLeg_rotY}-=22.0160914108'{animation_0}
+{rightLeg_rotZ}-=12.1512346403'{animation_0}
+
+{leftLeg_rotX}-=-61.6999475673'{animation_0}
+{leftLeg_rotY}-=-26.9462152625'{animation_0}
+{leftLeg_rotZ}-=-13.7121701921'{animation_0}
+
+{rightArm_rotX}-=-62.5'{animation_0}
+
+{leftArm_rotX}-=-60'{animation_0}

@@ -1,0 +1,24 @@
+{data} = curve {data}
+
+{rightArm_rotX} @ {data} -> - pi / 2
+{rightArm_rotY} @ {data} -'> -40'
+{rightArm_rotZ} @ {data} -'> -65'
+
+{leftArm_rotX} @ {data} -> - pi / 2
+{leftArm_rotY} @ {data} -'> 40'
+{leftArm_rotZ} @ {data} -'> 65'
+
+{head_rotX} @ {data} -> 4'
+{head_rotY} @ {data} -'> 0'
+{head_rotZ} @ {data} -'> 8'
+
+{rightArm_posX} = -4
+{rightArm_posZ} = 0
+{rightArm_posY} = 5
+
+{leftArm_posX} = 4
+{leftArm_posZ} = 0
+{leftArm_posY} = 5
+
+out "firstPerson" (true)
+out "translate" (0{data}, -0.5{data}, 0{data})

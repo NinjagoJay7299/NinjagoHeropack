@@ -1,0 +1,10 @@
+{
+    "name": "Shurikens",
+    "permission": "USE_SHURIKENS",
+    "holdingPose": "DUAL",
+    "melee": {
+      "attackDamage": 7.0,
+      "knockback": 0.2
+    }
+  }
+  

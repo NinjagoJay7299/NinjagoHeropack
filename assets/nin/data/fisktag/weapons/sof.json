@@ -1,0 +1,9 @@
+{
+  "name": "Sword Of Fire",
+  "permission": "USE_SWORD_OF_FIRE",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 12.0,
+    "knockback": 0.2
+  }
+}

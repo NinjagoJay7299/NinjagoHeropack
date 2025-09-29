@@ -1,0 +1,6 @@
+{
+    "parent": "fiskheroes:sound_base",
+    "sound": "nin:suit.zap",
+    "volume": 1.0,
+    "loop": false
+}
