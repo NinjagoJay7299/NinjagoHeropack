@@ -268,6 +268,10 @@ function isKeyBindEnabled(entity, keyBind) {
     || entity.isInWater() || pitch > 30
     switch (keyBind) {
         //powerset 1
+        case "Func_POWERSET_NEXT":
+            return !entity.isSneaking();
+        case "Func_POWERSET_PREV":
+            return entity.isSneaking();
         case "ENERGY_PROJECTION":
             return (entity.getData("nin:dyn/powerset") == 1);
         case "BLADE":
@@ -289,10 +293,6 @@ function isKeyBindEnabled(entity, keyBind) {
             return entity.getData("nin:dyn/powerset") == 1 && entity.getHeldItem().nbt().getString("WeaponType") == "nin:shuriken";
         case "SPINJITZU":        
             return entity.getHeldItem().nbt().getString("WeaponType") == "nin:shuriken" && entity.getData("nin:dyn/powerset") == 1;
-        case "Func_POWERSET_NEXT":
-            return !entity.isSneaking();
-        case "Func_POWERSET_PREV":
-            return entity.isSneaking();
         default:
             return true;    
        } 
