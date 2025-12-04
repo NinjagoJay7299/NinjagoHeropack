@@ -239,7 +239,7 @@ function render(entity, renderLayer, isFirstPersonArm) {
             // lightningsurgearms.opacity = 0.4;
             // lightningsurgearms.render();
             overlay.texture.set(null, "arms");
-            overlay.opacity = punch_timer;
+            overlay.opacity = punch_timer*0.2;
             overlay.render();
         }
         if (!isFirstPersonArm){
