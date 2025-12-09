@@ -8,3 +8,7 @@ loadTextures({
     "spinjitzu": "nin:cole/spinjitzu_cole",
     "airjitzu":"nin:cole/airjitzucole"
 });
+function init(renderer) {
+    parent.init(renderer);
+    renderer.setItemIcons("cole/cole_pilot_0", "cole/cole_pilot_1", "cole/cole_pilot_2", "cole/cole_pilot_3");
+}
